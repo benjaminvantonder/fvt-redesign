@@ -1,0 +1,47 @@
+export const services = [
+  {
+    id: 'residential',
+    title: 'Residential Architecture',
+    shortTitle: 'Residential',
+    description: 'From concept to completion, we design homes that are tailored to how you live. Every project begins with understanding your lifestyle, needs, and aspirations — then translating them into spaces that function beautifully.',
+    details: [
+      'New home design and planning',
+      'House renovations and extensions',
+      'Interior space planning',
+      'Site analysis and feasibility studies',
+      'Council submissions and approvals',
+      'Construction documentation',
+    ],
+    icon: 'home',
+  },
+  {
+    id: 'developer',
+    title: 'Developer Services',
+    shortTitle: 'Developers',
+    description: 'We partner with small-scale residential developers to deliver projects that balance commercial viability with quality design. Our understanding of the South African residential market ensures practical, buildable solutions.',
+    details: [
+      'Residential estate planning',
+      'Cluster housing design',
+      'Townhouse developments',
+      'Feasibility and costing guidance',
+      'Project management support',
+      'Bulk residential submissions',
+    ],
+    icon: 'building',
+  },
+  {
+    id: 'drawing-bureau',
+    title: 'Drawing Bureau',
+    shortTitle: 'Drawing Bureau',
+    description: 'A dedicated drawing bureau service exclusively for fellow architects. We provide detailed technical drawings, construction documentation, and CAD support to help practices scale their output.',
+    details: [
+      'Technical drawing production',
+      'Construction documentation',
+      'CAD drafting services',
+      'Detail development',
+      'Specification writing',
+      'Drawing verification and QA',
+    ],
+    icon: 'ruler',
+  },
+]
