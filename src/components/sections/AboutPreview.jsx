@@ -5,7 +5,7 @@ import { site } from '../../data/site'
 
 export default function AboutPreview() {
   return (
-    <section className="py-24 sm:py-32">
+    <section className="py-16 sm:py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
           <ScrollReveal>
@@ -27,7 +27,7 @@ export default function AboutPreview() {
           </ScrollReveal>
 
           <ScrollReveal delay={0.2}>
-            <div className="relative">
+            <div className="relative overflow-hidden rounded-lg">
               <img
                 src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop"
                 alt="FVT Architecture studio"

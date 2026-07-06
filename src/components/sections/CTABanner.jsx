@@ -3,14 +3,14 @@ import Button from '../ui/Button'
 
 export default function CTABanner() {
   return (
-    <section className="bg-stone-900 py-24 sm:py-32">
+    <section className="bg-stone-900 py-16 sm:py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-6 text-center lg:px-8">
         <ScrollReveal>
           <p className="text-sm font-medium tracking-[0.3em] text-stone-400 uppercase">
             Start Your Project
           </p>
           <h2 className="mt-4 font-serif text-3xl font-semibold text-white sm:text-4xl lg:text-5xl">
-            Let&apos;s build something<br />remarkable together
+            Let&apos;s build something remarkable together
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-lg text-stone-400">
             Whether you&apos;re planning a new home, a renovation, or a development,

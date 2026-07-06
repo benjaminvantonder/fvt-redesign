@@ -3,7 +3,7 @@ import ScrollReveal from '../ui/ScrollReveal'
 
 export default function Testimonial() {
   return (
-    <section className="py-24 sm:py-32">
+    <section className="py-16 sm:py-24 md:py-32">
       <div className="mx-auto max-w-4xl px-6 text-center lg:px-8">
         <ScrollReveal>
           <Quote className="mx-auto h-10 w-10 text-stone-300" />

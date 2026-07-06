@@ -36,7 +36,7 @@ export default function Header() {
       }`}
     >
       <nav className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="flex h-20 items-center justify-between">
+        <div className="flex h-16 items-center justify-between sm:h-20">
           <Link to="/" className="flex items-center gap-3">
             <div className={`flex h-10 w-10 items-center justify-center rounded transition-colors ${
               scrolled ? 'bg-stone-900' : 'bg-white'
@@ -78,7 +78,7 @@ export default function Header() {
 
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className={`flex h-10 w-10 items-center justify-center rounded-md transition-colors lg:hidden ${
+            className={`flex h-11 w-11 items-center justify-center rounded-md transition-colors lg:hidden ${
               scrolled
                 ? 'text-stone-700 hover:bg-stone-100'
                 : 'text-white hover:bg-white/10'

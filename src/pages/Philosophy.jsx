@@ -12,13 +12,13 @@ export default function Philosophy() {
         url="/philosophy"
       />
 
-      <section className="pt-32 pb-24 sm:pt-40 sm:pb-32">
+      <section className="pt-24 pb-16 sm:pt-32 sm:pb-24 md:pt-40 md:pb-32">
         <div className="mx-auto max-w-4xl px-6 text-center lg:px-8">
           <ScrollReveal>
             <p className="text-sm font-medium tracking-[0.3em] text-stone-500 uppercase">
               Our Philosophy
             </p>
-            <blockquote className="mt-8 font-serif text-3xl font-medium leading-relaxed text-stone-900 sm:text-4xl lg:text-5xl">
+            <blockquote className="mt-8 font-serif text-2xl font-medium leading-relaxed text-stone-900 sm:text-3xl lg:text-5xl">
               &ldquo;A house is a machine for living in&rdquo;
             </blockquote>
             <p className="mt-6 text-base text-stone-500">&mdash; Le Corbusier</p>
@@ -26,7 +26,7 @@ export default function Philosophy() {
         </div>
       </section>
 
-      <section className="border-t border-stone-200 py-24 sm:py-32">
+      <section className="border-t border-stone-200 py-16 sm:py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
             <ScrollReveal>
@@ -65,7 +65,7 @@ export default function Philosophy() {
         </div>
       </section>
 
-      <section className="border-t border-stone-200 bg-stone-50 py-24 sm:py-32">
+      <section className="border-t border-stone-200 bg-stone-50 py-16 sm:py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <ScrollReveal>
             <SectionHeading
@@ -104,7 +104,7 @@ export default function Philosophy() {
             ].map((item, i) => (
               <ScrollReveal key={item.step} delay={i * 0.1}>
                 <div className="text-center">
-                  <span className="font-serif text-5xl font-bold text-stone-200">
+                  <span className="font-serif text-4xl font-bold text-stone-200 sm:text-5xl">
                     {item.step}
                   </span>
                   <h3 className="mt-4 font-serif text-xl font-semibold text-stone-900">
@@ -120,7 +120,7 @@ export default function Philosophy() {
         </div>
       </section>
 
-      <section className="py-24 sm:py-32">
+      <section className="py-16 sm:py-24 md:py-32">
         <div className="mx-auto max-w-4xl px-6 text-center lg:px-8">
           <ScrollReveal>
             <SectionHeading

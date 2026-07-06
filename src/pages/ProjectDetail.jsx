@@ -42,7 +42,7 @@ export default function ProjectDetail() {
         url={`/projects/${project.slug}`}
       />
 
-      <section className="pt-32 pb-16 sm:pt-40">
+      <section className="pt-24 pb-8 sm:pt-32 md:pt-40">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <Link
             to="/projects"
@@ -180,7 +180,7 @@ export default function ProjectDetail() {
             to={`/projects/${nextProject.slug}`}
             className="group mt-6 block overflow-hidden rounded-lg"
           >
-            <div className="relative aspect-[21/9] overflow-hidden">
+            <div className="relative aspect-video overflow-hidden sm:aspect-[21/9]">
               <img
                 src={nextProject.thumbnail}
                 alt={nextProject.title}
@@ -188,14 +188,14 @@ export default function ProjectDetail() {
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-stone-900/70 to-transparent" />
-              <div className="absolute bottom-0 left-0 p-8">
-                <p className="text-sm font-medium text-stone-300">
+              <div className="absolute bottom-0 left-0 p-4 sm:p-8">
+                <p className="text-xs font-medium text-stone-300 sm:text-sm">
                   {nextProject.category}
                 </p>
-                <h3 className="mt-1 font-serif text-2xl font-semibold text-white sm:text-3xl">
+                <h3 className="mt-1 font-serif text-xl font-semibold text-white sm:text-2xl sm:text-3xl">
                   {nextProject.title}
                 </h3>
-                <div className="mt-3 inline-flex items-center gap-2 text-sm text-stone-300 transition-colors group-hover:text-white">
+                <div className="mt-2 inline-flex items-center gap-2 text-sm text-stone-300 transition-colors group-hover:text-white sm:mt-3">
                   View Project
                   <ArrowRight className="h-4 w-4" />
                 </div>

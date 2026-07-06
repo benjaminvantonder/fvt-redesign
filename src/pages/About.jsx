@@ -14,7 +14,7 @@ export default function About() {
         url="/about"
       />
 
-      <section className="pt-32 pb-24 sm:pt-40 sm:pb-32">
+      <section className="pt-24 pb-16 sm:pt-32 sm:pb-24 md:pt-40 md:pb-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <ScrollReveal>
             <SectionHeading
@@ -61,7 +61,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="border-t border-stone-200 bg-stone-50 py-24 sm:py-32">
+      <section className="border-t border-stone-200 bg-stone-50 py-16 sm:py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <ScrollReveal>
             <SectionHeading
@@ -104,7 +104,7 @@ export default function About() {
               },
             ].map((value, i) => (
               <ScrollReveal key={value.title} delay={i * 0.1}>
-                <div className="rounded-lg border border-stone-200 bg-white p-8">
+                <div className="rounded-lg border border-stone-200 bg-white p-6 sm:p-8">
                   <h3 className="font-serif text-lg font-semibold text-stone-900">
                     {value.title}
                   </h3>
@@ -118,7 +118,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="py-24 sm:py-32">
+      <section className="py-16 sm:py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <ScrollReveal>
             <SectionHeading
@@ -155,7 +155,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="border-t border-stone-200 bg-stone-50 py-24 sm:py-32">
+      <section className="border-t border-stone-200 bg-stone-50 py-16 sm:py-24 md:py-32">
         <div className="mx-auto max-w-4xl px-6 text-center lg:px-8">
           <ScrollReveal>
             <SectionHeading

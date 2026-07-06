@@ -20,7 +20,7 @@ export default function Projects() {
         url="/projects"
       />
 
-      <section className="pt-32 pb-24 sm:pt-40 sm:pb-32">
+      <section className="pt-24 pb-16 sm:pt-32 sm:pb-24 md:pt-40 md:pb-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <ScrollReveal>
             <p className="text-sm font-medium tracking-[0.3em] text-stone-500 uppercase">
@@ -41,7 +41,7 @@ export default function Projects() {
                 <button
                   key={cat}
                   onClick={() => setActiveCategory(cat)}
-                  className={`rounded-full px-5 py-2 text-sm font-medium transition-all ${
+                  className={`rounded-full px-4 py-2 text-sm font-medium transition-all sm:px-5 ${
                     activeCategory === cat
                       ? 'bg-stone-900 text-white'
                       : 'bg-stone-100 text-stone-600 hover:bg-stone-200'

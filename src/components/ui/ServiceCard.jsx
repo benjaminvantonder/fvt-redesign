@@ -16,7 +16,7 @@ export default function ServiceCard({ service, index = 0 }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-60px' }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="group rounded-lg border border-stone-200 bg-white p-8 transition-all duration-300 hover:border-stone-900 hover:shadow-lg"
+      className="group rounded-lg border border-stone-200 bg-white p-6 transition-all duration-300 hover:border-stone-900 hover:shadow-lg sm:p-8"
     >
       <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-stone-100 transition-colors duration-300 group-hover:bg-stone-900">
         <Icon className="h-6 w-6 text-stone-600 transition-colors duration-300 group-hover:text-white" />

@@ -57,7 +57,7 @@ export default function Resources() {
         url="/resources"
       />
 
-      <section className="pt-32 pb-24 sm:pt-40 sm:pb-32">
+      <section className="pt-24 pb-16 sm:pt-32 sm:pb-24 md:pt-40 md:pb-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <ScrollReveal>
             <SectionHeading

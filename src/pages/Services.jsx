@@ -15,7 +15,7 @@ export default function Services() {
         url="/services"
       />
 
-      <section className="pt-32 pb-24 sm:pt-40 sm:pb-32">
+      <section className="pt-24 pb-16 sm:pt-32 sm:pb-24 md:pt-40 md:pb-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <ScrollReveal>
             <SectionHeading
@@ -37,7 +37,7 @@ export default function Services() {
         <section
           key={service.id}
           id={service.id}
-          className={`border-t border-stone-200 py-24 sm:py-32 ${
+          className={`border-t border-stone-200 py-16 sm:py-24 md:py-32 ${
             i % 2 === 0 ? 'bg-stone-50' : 'bg-white'
           }`}
         >
@@ -89,7 +89,7 @@ export default function Services() {
         </section>
       ))}
 
-      <section className="bg-stone-900 py-24 sm:py-32">
+      <section className="bg-stone-900 py-16 sm:py-24 md:py-32">
         <div className="mx-auto max-w-4xl px-6 text-center lg:px-8">
           <ScrollReveal>
             <h2 className="font-serif text-3xl font-semibold text-white sm:text-4xl">

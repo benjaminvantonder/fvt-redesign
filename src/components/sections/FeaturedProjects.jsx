@@ -8,7 +8,7 @@ export default function FeaturedProjects() {
   const featured = projects.filter((p) => p.featured).slice(0, 3)
 
   return (
-    <section className="bg-stone-100 py-24 sm:py-32">
+    <section className="bg-stone-100 py-16 sm:py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <ScrollReveal>
           <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
