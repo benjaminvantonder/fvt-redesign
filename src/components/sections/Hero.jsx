@@ -14,13 +14,13 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-stone-900/60 via-stone-900/40 to-stone-900/70" />
       </div>
 
-      <div className="relative z-10 mx-auto max-w-7xl px-6 text-center lg:px-8">
+      <div className="relative z-10 mx-auto max-w-7xl px-5 text-center sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <p className="text-sm font-medium tracking-[0.3em] text-stone-300 uppercase">
+          <p className="text-xs font-medium tracking-[0.25em] text-stone-300 uppercase sm:text-sm sm:tracking-[0.3em]">
             South African Architecture
           </p>
         </motion.div>
@@ -29,7 +29,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="mt-6 font-serif text-3xl font-semibold text-white sm:text-5xl md:text-7xl lg:text-8xl"
+          className="mt-4 font-serif text-3xl font-semibold text-white sm:text-5xl md:mt-6 md:text-7xl lg:text-8xl"
         >
           FVT Architecture
         </motion.h1>
@@ -38,7 +38,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="mx-auto mt-4 max-w-xl text-base italic leading-relaxed text-stone-300 sm:text-lg"
+          className="mx-auto mt-3 max-w-xl text-sm italic leading-relaxed text-stone-300 sm:text-base md:mt-4 sm:text-lg"
         >
           &ldquo;A house is a machine for living in&rdquo;
         </motion.p>
@@ -47,7 +47,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4"
+          className="mt-6 flex flex-col items-center justify-center gap-3 sm:mt-8 sm:flex-row sm:gap-4"
         >
           <Button to="/projects" variant="secondary" size="lg" showArrow className="border-white/30 text-white hover:bg-white hover:text-stone-900">
             Explore Our Work

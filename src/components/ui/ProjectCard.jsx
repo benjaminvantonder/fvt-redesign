@@ -23,16 +23,16 @@ export default function ProjectCard({ project, index = 0 }) {
           />
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-stone-900/80 via-stone-900/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-        <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-4 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+        <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-5 translate-y-2 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
           <div className="flex items-end justify-between">
             <div>
-              <p className="text-xs font-medium tracking-wider text-stone-300 uppercase">
+              <p className="text-[10px] font-medium tracking-wider text-stone-300 uppercase sm:text-xs">
                 {project.category}
               </p>
-              <h3 className="mt-1 font-serif text-xl font-semibold text-white">
+              <h3 className="mt-0.5 font-serif text-base font-semibold text-white sm:text-xl">
                 {project.title}
               </h3>
-              <p className="mt-1 text-sm text-stone-300">
+              <p className="mt-0.5 text-xs text-stone-300 sm:text-sm">
                 {project.location}
               </p>
             </div>

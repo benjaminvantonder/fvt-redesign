@@ -188,14 +188,14 @@ export default function ProjectDetail() {
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-stone-900/70 to-transparent" />
-              <div className="absolute bottom-0 left-0 p-4 sm:p-8">
-                <p className="text-xs font-medium text-stone-300 sm:text-sm">
+              <div className="absolute bottom-0 left-0 p-3 sm:p-6 md:p-8">
+                <p className="text-[10px] font-medium text-stone-300 sm:text-xs sm:text-sm">
                   {nextProject.category}
                 </p>
-                <h3 className="mt-1 font-serif text-xl font-semibold text-white sm:text-2xl sm:text-3xl">
+                <h3 className="mt-0.5 font-serif text-lg font-semibold text-white sm:text-xl sm:mt-1 sm:text-2xl sm:text-3xl">
                   {nextProject.title}
                 </h3>
-                <div className="mt-2 inline-flex items-center gap-2 text-sm text-stone-300 transition-colors group-hover:text-white sm:mt-3">
+                <div className="mt-1 inline-flex items-center gap-1.5 text-xs text-stone-300 transition-colors group-hover:text-white sm:mt-2 sm:gap-2 sm:text-sm">
                   View Project
                   <ArrowRight className="h-4 w-4" />
                 </div>
