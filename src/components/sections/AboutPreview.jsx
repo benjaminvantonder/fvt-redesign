@@ -27,16 +27,16 @@ export default function AboutPreview() {
           </ScrollReveal>
 
           <ScrollReveal delay={0.2}>
-            <div className="relative overflow-hidden rounded-lg">
+            <div className="relative">
               <img
                 src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop"
                 alt="FVT Architecture studio"
                 className="rounded-lg object-cover shadow-lg"
                 loading="lazy"
               />
-              <div className="absolute -bottom-6 -left-6 rounded-lg bg-stone-900 p-6 shadow-xl">
-                <p className="font-serif text-3xl font-bold text-white">15+</p>
-                <p className="mt-1 text-sm text-stone-400">Years of experience</p>
+              <div className="absolute bottom-4 left-4 rounded-lg bg-stone-900/90 p-4 shadow-xl backdrop-blur-sm sm:bottom-6 sm:left-6 sm:p-6">
+                <p className="font-serif text-2xl font-bold text-white sm:text-3xl">15+</p>
+                <p className="mt-0.5 text-xs text-stone-300 sm:mt-1 sm:text-sm">Years of experience</p>
               </div>
             </div>
           </ScrollReveal>
