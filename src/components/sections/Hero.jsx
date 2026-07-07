@@ -52,7 +52,7 @@ export default function Hero() {
           <Button to="/projects" variant="secondary" size="lg" showArrow className="border-white/30 text-white hover:bg-white hover:text-stone-900">
             Explore Our Work
           </Button>
-          <Button to="/contact" variant="ghost" size="lg" className="text-stone-300 hover:text-white">
+          <Button to="/contact" variant="secondary" size="lg" className="border-white/30 text-white hover:bg-white hover:text-stone-900">
             Get in Touch
           </Button>
         </motion.div>
