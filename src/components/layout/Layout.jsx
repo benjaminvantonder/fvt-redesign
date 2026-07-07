@@ -1,26 +1,28 @@
-import { useEffect, useLayoutEffect, useRef } from 'react'
+import { useEffect, useLayoutEffect } from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
 import Header from './Header'
 import Footer from './Footer'
 
 export default function Layout() {
-  const { pathname } = useLocation()
-  const prevPathname = useRef(pathname)
+  const location = useLocation()
+  const { pathname, key } = location
 
   useLayoutEffect(() => {
-    if (prevPathname.current !== pathname) {
-      prevPathname.current = pathname
-      window.scrollTo(0, 0)
-    }
-  }, [pathname])
+    window.scrollTo(0, 0)
+  }, [key])
 
   useEffect(() => {
-    if (prevPathname.current === pathname) return
-    const timer = setTimeout(() => {
-      window.scrollTo(0, 0)
-    }, 0)
-    return () => clearTimeout(timer)
-  }, [pathname])
+    const reset = () => window.scrollTo(0, 0)
+    reset()
+    const t1 = setTimeout(reset, 0)
+    const t2 = setTimeout(reset, 100)
+    window.addEventListener('popstate', reset)
+    return () => {
+      clearTimeout(t1)
+      clearTimeout(t2)
+      window.removeEventListener('popstate', reset)
+    }
+  }, [key])
 
   return (
     <div className="flex min-h-screen flex-col">

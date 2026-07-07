@@ -5,6 +5,10 @@ import { HelmetProvider } from 'react-helmet-async'
 import App from './App.jsx'
 import './index.css'
 
+if (window.history) {
+  window.history.scrollRestoration = 'manual'
+}
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <HelmetProvider>
